@@ -1,0 +1,56 @@
+# Secrets & credentials (never commit)
+huggingface-api.json
+.env
+.env.*
+!.env.example
+*.json.bak
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Data & models (large files)
+data/raw/*.csv
+data/raw/*.json
+data/synth/*.csv
+data/synth/*.json
+models/*.bin
+models/*.safetensors
+models/*.pt
+!data/raw/.gitkeep
+!data/synth/.gitkeep
+!models/.gitkeep
+
+# Logs & misc
+*.log
+.DS_Store

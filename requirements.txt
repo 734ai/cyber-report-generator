@@ -1,0 +1,15 @@
+# AI-Powered Cyber Report Generator
+# Install: pip install -r requirements.txt
+
+gradio>=4.0.0,<6.0.0
+pandas>=2.0.0
+datasets>=2.14.0
+numpy>=1.24.0
+python-dateutil>=2.8.0
+markdown>=3.4.0
+
+# Optional (for fine-tuning / embeddings)
+torch>=2.0.0
+transformers>=4.35.0
+sentence-transformers>=2.2.0
+accelerate>=0.20.0
