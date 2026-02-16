@@ -99,13 +99,13 @@ with gr.Blocks(title="Cyber Report Generator") as demo:
         return content
 
     def export_md_file(text: str):
-        report = generate_stub_report(text)
+        report = run_inference_report(text)
         p = Path(tempfile.gettempdir()) / "cyber_report.md"
         export_markdown(report, p)
         return str(p)
 
     def export_html_file(text: str):
-        report = generate_stub_report(text)
+        report = run_inference_report(text)
         p = Path(tempfile.gettempdir()) / "cyber_report.html"
         export_html(report, p)
         return str(p)
