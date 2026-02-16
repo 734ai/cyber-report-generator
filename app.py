@@ -49,7 +49,7 @@ def load_uploaded_file(file) -> str:
         return f.read()
 
 
-with gr.Blocks(title="Cyber Report Generator") as demo:
+with gr.Blocks(theme=gr.themes.Soft(primary_hue="slate"), title="Cyber Report Generator") as demo:
     gr.Markdown(
         """
         # AI-Powered Cyber Report Generator
@@ -134,6 +134,5 @@ with gr.Blocks(title="Cyber Report Generator") as demo:
 
 if __name__ == "__main__":
     demo.launch(
-        theme=gr.themes.Soft(primary_hue="slate"),
         server_name="0.0.0.0",  # Allow external access (Hugging Face Spaces)
     )
